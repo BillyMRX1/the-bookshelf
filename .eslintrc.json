@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["import"],
+  "rules": {
+    "no-console": "off",
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }
+    ],
+    "quotes": ["error", "double"],
+    "import/extensions": [".js", ".mjs", ".jsx"]
+  },
+  "globals": {
+    "nanoid": "readonly"
+  }
+}
